@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.restfully.shop.test.CustomerResourceTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.201 sec <<< FAILURE!
-testCustomerResource(com.restfully.shop.test.CustomerResourceTest)  Time elapsed: 0.169 sec  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.142 sec <<< FAILURE!
+testCustomerResource(com.restfully.shop.test.CustomerResourceTest)  Time elapsed: 0.114 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<201> but was:<404>
 	at org.junit.Assert.fail(Assert.java:93)
 	at org.junit.Assert.failNotEquals(Assert.java:647)
