@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <Service class-name="org.foo.YourresourceBean">
+    cxf.jaxrs.properties = config
+  </Service>
+
+  <Service id="config" class-name="java.util.Properties">
+faultStackTraceEnabled=true
+  </Service>
+</resources>

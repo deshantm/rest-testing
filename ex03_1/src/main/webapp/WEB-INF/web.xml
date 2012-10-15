@@ -1,0 +1,45 @@
+<web-app>
+     <display-name>Archetype Created Web Application</display-name>
+	 
+	 
+	 <servlet>
+ <servlet-name>CXFServlet</servlet-name>
+ <display-name>CXF Servlet</display-name>
+ <servlet-class>
+   org.apache.cxf.jaxrs.servlet.CXFNonSpringJaxrsServlet
+ </servlet-class>
+ <init-param>
+  <param-name>jaxrs.serviceClasses</param-name>
+  <param-value>
+    com.restfully.shop.services.CustomerResource      
+  </param-value>
+ </init-param>
+ 
+ <init-param>
+  <param-name>jaxrs.scope</param-name>
+  <param-value>
+    singleton
+  </param-value>
+ </init-param>
+ 
+ 
+ 
+ 
+ <!--
+ <init-param>
+  <param-name>jaxrs.providers</param-name>
+  <param-value>
+    org.apache.cxf.systest.jaxrs.BookStoreProvider1
+    org.apache.cxf.systest.jaxrs.BookStoreProvider2		      
+  </param-value>
+ </init-param>
+ -->
+ 
+
+ <load-on-startup>1</load-on-startup>
+
+
+</servlet>
+	 
+	 
+	  </web-app>

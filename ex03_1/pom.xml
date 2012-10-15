@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+   <!-- <parent>
+        <groupId>com.oreilly.rest.workbook</groupId>
+        <artifactId>workbook-pom</artifactId>
+        <version>1.0</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+	-->
+    <modelVersion>4.0.0</modelVersion>
+	
+	
+	<properties>
+        <cxf.version>${project.version}</cxf.version>
+        <httpclient.version>3.1</httpclient.version>
+    </properties>
+	
+    <groupId>com.oreilly.rest.workbook</groupId>
+    <artifactId>workbook-ex03_1</artifactId>
+    <version>1.0</version>
+    <packaging>war</packaging>
+    <name>ex03_1</name>
+    <description/>
+	
+	 <repositories>
+        <repository>
+          <id>apacheSnapshots</id>
+          <name>Apache Snapshots</name>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+            <checksumPolicy>warn</checksumPolicy>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+            <checksumPolicy>warn</checksumPolicy>
+          </snapshots>
+          <url>http://repository.apache.org/content/groups/snapshots/</url>
+          <layout>default</layout>
+        </repository>
+      </repositories>
+     <pluginRepositories>
+    <pluginRepository>
+      <id>apache.snapshots</id>
+      <url>http://repository.apache.org/snapshots/</url>
+	   <releases>
+        <updatePolicy>always</updatePolicy>
+      </releases>
+      <snapshots>
+        <updatePolicy>always</updatePolicy>
+      </snapshots>
+    </pluginRepository>
+   </pluginRepositories>
+	
+	
+	
+<dependencies>
+         <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-transports-http</artifactId>
+            <version>2.7.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+            <version>2.7.0</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+            <version>${httpclient.version}</version>
+        </dependency>
+        
+         <dependency>
+      <groupId>javax.ejb</groupId>
+      <artifactId>ejb-api</artifactId>
+      <version>3.0</version>
+      <scope>provided</scope>
+    </dependency>
+        
+        
+        <dependency>
+            <groupId>javax.ws.rs</groupId>
+            <artifactId>javax.ws.rs-api</artifactId>
+            <version>2.0-m10</version>
+</dependency>
+        
+        <!--
+         <dependency>
+            <groupId>javax.ws.rs</groupId>
+            <artifactId>javax.ws.rs-api</artifactId>
+        </dependency>
+         -->
+<dependency>
+<groupId>junit</groupId>
+   <artifactId>junit</artifactId>
+   <version>4.10</version>
+   <scope>test</scope>
+</dependency>
+</dependencies>
+    <build>
+  
+    </build>
+</project>
